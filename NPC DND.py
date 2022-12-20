@@ -160,7 +160,6 @@ def get_npc_ideal():
     ideal = ideals[random.randint(0, 5)]
 
     return ideal
-# Función para generar un NPC aleatoriamente
 
 
 class NPC:
@@ -176,5 +175,13 @@ class NPC:
 
 
 # imprimimos el NPC
-npc = NPC()
-print(f"Appearance: {npc.appearance} \n Ability: {npc.ability} \n Talent: {npc.talent} \n Mannerisms: {npc.mannerisms} \n Interaction Traits: {npc.interaction_traits} \n Bonds: {npc.bonds} \n Flaws and Secrets: {npc.flaws_and_secrets} \n Ideal: {npc.ideal} \n")
+
+
+def main():
+    npc = NPC()
+    print(f"Appearance: {npc.appearance} \n Ability: {npc.ability} \n Talent: {npc.talent} \n Mannerisms: {npc.mannerisms} \n Interaction Traits: {npc.interaction_traits} \n Bonds: {npc.bonds} \n Flaws and Secrets: {npc.flaws_and_secrets} \n Ideal: {npc.ideal} \n")
+
+
+# call the main function
+if __name__ == "__main__":
+    main()
